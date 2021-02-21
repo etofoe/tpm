@@ -168,6 +168,8 @@ return [
          */
         Jenssegers\Mongodb\MongodbServiceProvider::class,
 
+        Kreait\Laravel\Firebase\ServiceProvider::class,
+
         /*
          * Application Service Providers...
          */

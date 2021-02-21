@@ -45,4 +45,12 @@ Route::group(['middleware' => 'auth'],function (){
     Route::get('car/edit/{id}','App\Http\Controllers\CarsController@edit')->name('edit-car-page');
     Route::post('car/edit/{id}','App\Http\Controllers\CarsController@update')->name('edit-Car');
     Route::delete('car/{id}','App\Http\Controllers\CarsController@destroy')->name('delete-car');
+
+
+    Route::get('/student','App\Http\Controllers\FirebaseController@index');
+    Route::get('/student/add', 'App\Http\Controllers\FirebaseController@create');
+    Route::post('/student/add', 'App\Http\Controllers\FirebaseController@store');
+    Route::post('/student/edit', 'App\Http\Controllers\FirebaseController@update')->name('student-edit');
+    Route::post('/student/delete', 'App\Http\Controllers\FirebaseController@delete')->name('student-delete');
+    Route::get('/student/edit/{id}', 'App\Http\Controllers\FirebaseController@edit');
 });
