@@ -24,6 +24,7 @@
                             <li ><a href="/book">MongoDB</a></li>
                             <li ><a href="/school/">Postgres</a></li>
                             <li><a href="/car/">Sqlite</li>
+                            <li><a href="student/">Firebase</li>
                         </div>
                     </div>
                 </div>
